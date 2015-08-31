@@ -1,0 +1,108 @@
+*** WooCommerce PDF Product Vouchers Changelog ***
+
+2015.07.28 - version 2.4.0
+ * Misc - WooCommerce 2.4 Compatibility
+
+2015.05.14 - version 2.3.4
+ * Tweak - You can now display the recipient name on the product page without positioning it on the voucher
+
+2015.04.21 - version 2.3.3
+ * Fix - Escape all instances of add_query_arg and remove_query_arg to avoid a potential XSS attack
+
+2015.04.21 - version 2.3.2
+ * Fix - Potential XSS with add_query_arg
+
+2015.04.08 - version 2.3.1
+ * Fix - Apply custom DPI to additional images
+
+2015.03.26 - version 2.3.0
+ * Feature - Custom DPI handling
+ * Feature - The admin New Order email now shows the voucher number in the item details
+ * Tweak - Introduce `wc_pdf_product_vouchers_voucher_image_dpi` filter
+
+2015.03.06 - version 2.2.2
+ * Fix - Recipient email dispatch bug
+
+2015.02.24 - version 2.2.1
+ * Fix - Ensure variation meta is properly saved in WooCommerce 2.3
+ * Fix - Fix issues with downloading vouchers when using the Redirect download method
+
+2015.02.09 - version 2.2.0
+ * Misc - WooCommerce 2.3 Compatibility
+
+2015.01.20 - version 2.1.5
+ * Fix - Fix a fatal error which may occur with some third-party plugins
+
+2014.11.11 - version 2.1.4
+ * Tweak - Add 'wc_pdf_product_vouchers_get_expiry' filter
+ * Tweak - Add 'wc_pdf_product_vouchers_get_formatted_expiration_date' filter
+ * Tweak - Add 'wc_pdf_product_vouchers_get_recipient_name' filter
+ * Tweak - Add 'wc_pdf_product_vouchers_get_recipient_email' filter
+ * Tweak - Add 'wc_pdf_product_vouchers_get_message' filter
+ * Tweak - Add 'wc_pdf_product_vouchers_get_product_name' filter
+ * Tweak - Add 'wc_pdf_product_vouchers_get_product_sku' filter
+ * Tweak - Add 'wc_pdf_product_vouchers_get_product_price' filter
+
+2014.10.06 - version 2.1.3
+ * Fix - Fix a notice when saving an order with redeemed vouchers
+
+2014.09.30 - version 2.1.2
+ * Fix - Fix an issue with orders created from the backend
+ * Fix - Fix an issue with variations using product vouchers in WooCommerce 2.2
+
+2014.09.07 - version 2.1.1
+ * Misc - WooCommerce 2.2 Compatibility
+
+2014.05.28 - version 2.1.0
+ * Feature - Voucher download link from admin order edit page
+ * Tweak - New filter wc_pdf_product_vouchers_expiry_from_date to set the voucher expiry start date
+
+2014.04.25 - version 2.0.4
+ * Tweak - Show the product price on the voucher inclusive of tax when prices are displayed in the shop inclusive of tax
+ * Fix - Variable product where at least one, but not all variations have a voucher
+ * Fix - Upgrade path for voucher data Recipient Name/Message fields
+
+2014.02.24 - version 2.0.3
+ * Tweak - Improved Unicode character support
+ * Tweak - Improved support for the Name Your Price plugin
+ * Fix - WC 2.1 Compatibility bug
+ * Fix - Voucher expiration date handling - Thanks Nathan!
+
+2014.02.10 - version 2.0.2
+ * Tweak - Voucher Email Recipient/Message can be enabled/disabled for the frontend product independently of whether they are printed to the voucher
+ * Fix - Fixed WC 2.1/2.0.x compatibility issue
+ * Fix - Voucher product name uses html_entity_decode to replace encoded HTML characters
+
+2014.01.23 - version 2.0.1
+ * Fix - Fixed a bug in the Voucher Edit admin
+
+2014.01.20 - version 2.0
+ * Feature - Full product variation support
+ * Feature - Voucher Recipient input field and email action
+ * Feature - Product price voucher field
+ * Feature - Configurable field label for Recipient Name, Recipient Email and Message to Recipient
+ * Feature - Regular file downloads also allowed for voucher products
+ * Tweak - Improved voucher generation error reporting
+ * Misc - Complete rewrite
+ * Misc - Uses SkyVerge Plugin Framework
+ * Misc - WooCommerce 2.1 Compatibility
+ * Localization - changed text domain to woocommerce-pdf-product-vouchers
+
+2013.12.13 - version 1.2
+ * Feature - Custom voucher fields can be programmatically added
+ * Feature - Voucher field text alignment (left/center/right) can be set
+ * Fix - Download links for orders with more than one of the same voucher item
+ * Fix - Multiple of "sold individually" vouchers can be included on the same order
+ * Localization - Improved localization support
+
+2013.09.11 - version 1.1.2
+ * Fix - fixed a notice
+
+2013.08.23 - version 1.1.1
+ * Tweak - Improved voucher number customizability
+
+2013.07.12 - version 1.1
+ * Feature - Configuration option to make frontend user input fields required for voucher product to be added to cart
+
+2013.05.16 - version 1.0
+ * Initial Release
